@@ -11,12 +11,18 @@
   //     ".ocean - portal - announcement-text"
   //   );
   //   portal.id = "portal";
-  let userName = kintone.getLoginUser().name;
-
-  // console.log(text[0]);
-
-  $(".gaia-argoui-widget-body").remove();
-
+  let userName = function() {
+    userName = kintone.getLoginUser().name;
+    if (userName != test) {
+      return;
+    }
+    const portal = document.getElementsByClassName(
+      ".ocean-portal-announcement"
+    );
+    portal.id = "portal";
+    portal.style.display = "";
+  };
+  userName();
   // if (!linkTest) {
   //   return;
   // }

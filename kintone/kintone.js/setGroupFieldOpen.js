@@ -43,6 +43,8 @@
       let categori = record.契約種目.value;
       console.log(categori);
 
+      //「契約種目」の入力値チェック
+
       if (categori == "賃貸") {
         kintone.app.record.setGroupFieldOpen("賃貸", true);
       } else if (categori == "リフォーム") {
