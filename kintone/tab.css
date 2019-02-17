@@ -1,0 +1,37 @@
+body {
+background-color: #888888;
+}
+
+#tab_area {
+  height: 300px;
+  width: 900px;
+}
+
+#tab_index {
+ height: 30px;
+ width: 60%;
+ color: #ffffff;
+ text-align: center;
+}
+
+#tab_index_a {
+ height: 30px;
+ width: 33%;
+ background-color: #ffff00;
+ color: #000000;
+ text-align: center;
+ cursol: pointer;
+ padding-top: 0.5em;
+ float: left;
+}
+
+#tab_index_b {
+  height: 30px;
+  width: 33%;
+  background-color: #00ffff;
+  color: #000000;
+  text-align: center;
+  cursol: pointer;
+  padding-top: 0.5em;
+  float: left;
+}

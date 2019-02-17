@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>Sample</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+  </head>
+  <body>
+    <!-- メインページ -->
+    <div data-role="page" id="page01">
+      <div data-role="header"><h1>ダイアログサンプル</h1></div>
+      <div data-role="content">
+        <p>ダイアログサンプル</p>
+        <ul>
+          <li><a href="#dialog01" data-rel="dialog">ダイアログを表示(1)</a></li>
+          <li><a href="#dialog02">ダイアログを表示(2)</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ダイアログとして表示するページ、その１ -->
+    <div data-role="page" id="dialog01">
+      <div data-role="header"><h1>お試し</h1></div>
+      <div data-role="content"><p>一週間お試しいただけます</p></div>
+    </div>
+    <!-- ダイアログとして表示するページ、その２ -->
+    <div data-role="dialog" id="dialog02">
+      <div data-role="header"><h1>お試し</h1></div>
+      <div data-role="content"><p>14日間お試しいただけます</p></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="js/sample.js"></script>
+    <style>
+      td { color: red; }
+    </style>
+  </head>
+  <body>
+    <h1>downクラスに一致しない要素を選択する</h1>
+    <form>
+      <input type="button" value="黒字の売り上げの文字色を変更">
+    </form>
+    <table border="1" id="sale">
+      <thead>
+        <tr><th>日付</th><th>売り上げ</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>1月</td><td>100円</td></tr>
+      <tr><td>2月</td><td>200円</td></tr>
+      <tr><td>3月</td><td class="down">-500円</td></tr>
+      <tr><td>4月</td><td>1100円</td></tr>
+      <tr><td>5月</td><td>1300円</td></tr>
+      <tr><td>6月</td><td class="down">-900円</td></tr>
+      <tr><td>7月</td><td>450円</td></tr>
+      <tr><td>8月</td><td>1000円</td></tr>
+      <tr><td>9月</td><td class="down">-1560円</td></tr>
+      <tr><td>10月</td><td>2100円</td></tr>
+      <tr><td>11月</td><td>3500円</td></tr>
+      <tr><td>12月</td><td>5700円</td></tr>
+      </tbody>
+    </table>
+  </body>
+</html>

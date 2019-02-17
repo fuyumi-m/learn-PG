@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>menta</title>
+    <script src="menta.js/kansuu.js"></script>
+    <script src="menta.js/scope.js"></script>
+    <script src="menta.js/todo.js"></script>
+  </head>
+  <body>
+    <script>
+      (function() {
+        //オブジェクトの生成とnameにその参照を代入
+        const person = {
+          name: "fuyumi",
+          age: 29,
+          hobbies: ["PC", "game"]
+        };
+        person.hobbies.forEach(hobby => {
+          console.log(hobby);
+        });
+      })();
+    </script>
+  </body>
+</html>

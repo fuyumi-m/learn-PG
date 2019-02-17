@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>Sample</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header"><h1>URLの入力</h1></div>
+      <div data-role="content">
+        <form>
+          <label for="url1">登録するURL</label>
+          <input type="url" name="url1" id="url1">
+          <div data-role="fieldcontain">
+            <label for="url2">登録するURL</label>
+            <input type="url" name="url2" id="url2">
+          </div>
+          <label for="url3">登録するURL</label>
+          <input type="url" name="url3" id="url3" data-role="none"><br>
+          <input type="submit" value="送信">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

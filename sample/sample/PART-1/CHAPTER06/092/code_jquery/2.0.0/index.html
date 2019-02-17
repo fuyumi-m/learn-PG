@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/sample.js"></script>
+    <style>
+      .parts { border:1px solid black; width: 300px; height: 200px; }
+    </style>
+  </head>
+  <body>
+    <h1>要素を切り離す</h1>
+    <form>
+      <input type="button" value="img要素を切り離す">
+      <input type="button" value="img要素を連結">
+    </form>
+    <div id="imageList">
+      <img src="images/0.jpg" width="128" height="72" alt="">
+      <img src="images/1.jpg" width="128" height="72" alt="">
+      <img src="images/2.jpg" width="128" height="72" alt="">
+    </div>
+    <div>画像だけが切り離されます。</div>
+    <div class="parts"></div>
+  </body>
+</html>

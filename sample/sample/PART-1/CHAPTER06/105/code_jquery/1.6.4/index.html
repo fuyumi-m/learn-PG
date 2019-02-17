@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="js/sample.js"></script>
+    <style>
+      .mark {  border:2px dotted red; background-color: yellow;
+          width: 180px; text-align: center; }
+      .note {  border:2px solid green; background-color: cyan;
+          margin:10px; padding:10px; }
+    </style>
+  </head>
+  <body>
+    <h1>要素の内側に入れ込む</h1>
+    <form>
+      <input type="button" value="画像を囲む">
+    </form>
+    <div id="imageList">
+      <div class="mark"><img src="images/0.jpg" width="128" height="72" alt="松本城"></div>
+      <div class="mark"><img src="images/1.jpg" width="128" height="72" alt="味噌川ダム"></div>
+      <div class="mark"><img src="images/2.jpg" width="128" height="72" alt="妻籠宿"></div>
+    </div>
+  </body>
+</html>

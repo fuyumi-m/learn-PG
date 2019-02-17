@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+	<meta charset="utf-8">
+	<title>jsの基本</title>
+  <script type="text/javascript" src="callender.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <style>
+
+  #calendar {
+    width: 600px;
+    padding: 10px;
+    border: 3px double #ccc;
+    text-align: center;
+  }
+
+  .calendar-header__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px double #ccc;
+  }
+
+ .calendar-header__prev, .calendar-header__next {
+
+   font-size: 25px;
+   height: 1.5;
+   line-height: 1.5;
+   margin: 5px 20px;
+   border-radius: 5px;
+ }
+
+ .calendar-header__prev{
+   float: left;
+ }
+
+.calendar-header__next {
+  float: right;
+}
+  .calendar-table {
+    width: 550px;
+    height: 2.5;
+    line-height: 2.5;
+    border: 1px double #ccc;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 5px auto;
+  }
+
+.calendar-table th {
+  border: 1px solid #ccc;
+  font-size: 20px;
+  font-weight: bold;:
+}
+
+.calendar-table td {
+  text-align: left;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.calendar-table td:hover {
+  background-color: #ccc;
+}
+
+  </style>
+  </head>
+  <body>
+	<h1>イベントの練習</h1>
+
+  <div id="calendar"></div>
+
+  <div></div>
+
+  </body>
+</html>

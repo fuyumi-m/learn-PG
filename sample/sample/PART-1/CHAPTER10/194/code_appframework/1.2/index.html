@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample</title>
+    <script src="http://cdn.app-framework-software.intel.com/1.2/jq.mobi.min.js"></script>
+    <script src="js/sample.js"></script>
+  </head>
+  <body>
+    <h1>フォームデータをシリアライズする</h1>
+    <form id="myForm">
+      <input type="text" name="deviceName" value="iPhone">
+      <select name="version">
+        <option value="5">iPhone 5</option>
+        <option value="5c">iPhone 5c</option>
+        <option value="5s">iPhone 5s</option>
+      </select>
+    </form>
+    <form>
+      <input type="button" value="シリアライズする" id="btn1">
+      <input type="button" value="シリアライズし配列にする" id="btn2">
+    </form>
+    <output id="result"></output>
+  </body>
+</html>

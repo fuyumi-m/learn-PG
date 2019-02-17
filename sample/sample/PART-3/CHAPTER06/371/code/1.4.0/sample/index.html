@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>Sample</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/sample.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+  </head>
+  <body>
+    <!-- 1ページ -->
+    <div data-role="page" id="page01">
+      <div data-role="header"><h1>Page 01</h1></div>
+      <div data-role="content">
+        <p>ここは1ページです</p>
+        <ul>
+          <li><a href="#page02">ページ2へ</a></li>
+          <li><a href="#dlg" data-rel="dialog">ダイアログ表示</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 2ページ -->
+    <div data-role="page" id="page02">
+      <div data-role="header"><h1>Page 02</h1></div>
+      <div data-role="content"><p>ここは2ページです</p></div>
+    </div>
+    <!-- 3ページ -->
+    <div data-role="page" id="dlg">
+      <div data-role="header"><h1>注意</h1></div>
+      <div data-role="content"><p>ここは危険地帯です</p></div>
+    </div>
+  </body>
+</html>

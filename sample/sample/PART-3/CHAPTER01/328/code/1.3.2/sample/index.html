@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>Sample</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+  </head>
+  <body>
+    <div data-role="page" id="x1">
+      <div data-role="header">
+        <h1>ヘッダー</h1>
+        <a href="#mz">ボタン</a>
+      </div>
+      <div data-role="content">  
+        <p>ヘッダーにボタンが表示されます</p>
+      </div>
+    </div>
+    <div data-role="page" id="mz">
+      <div data-role="header">
+        <h1>2ページ</h1>
+        <a href="#x1">ボタン1</a>
+        <a href="#mebius">ボタン2</a>
+      </div>
+      <div data-role="content">  
+        <p>ヘッダーに２つボタンが表示されます</p>
+      </div>
+    </div>
+    <div data-role="page" id="mebius">
+      <div data-role="header">
+        <h1>3ページ</h1>
+        <a href="#mz" class="ui-btn-right">ボタン1</a>
+      </div>
+      <div data-role="content">  
+        <p>ヘッダーの右側にボタンが表示されます</p>
+      </div>
+    </div>
+  </body>
+</html>
