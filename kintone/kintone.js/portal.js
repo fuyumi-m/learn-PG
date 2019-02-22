@@ -7,34 +7,16 @@
   }
   test();
 
-  //   var portal = document.getElementsByClassName(
-  //     ".ocean - portal - announcement-text"
-  //   );
-  //   portal.id = "portal";
-  let userName = function() {
-    userName = kintone.getLoginUser().name;
-    if (userName != test) {
-      return;
-    }
-    const portal = document.getElementsByClassName(
-      ".ocean-portal-announcement"
-    );
-    portal.id = "portal";
-    portal.style.display = "";
-  };
-  userName();
-  // if (!linkTest) {
-  //   return;
-  // }
-  // var testA = document.createElement("a");
-  // testA.href =
-  //   location.protocol +
-  //   "//" +
-  //   location.hostname +
-  //   "/k/#/space" +
-  //   "/1/thread/1";
+  let portal0 = document.getElementsByClassName(
+    ".ocean-portal-announcement-body"
+  );
+  let portal1 = document.getElementsByClassName(
+    ".ocean-portal-announcement-text"
+  );
+  let portaldiv = document
+    .querySelectorAll(".ocean-portal-announcement-text>div")
+    .display("");
 
-  // location.replace(testA);
-
-  console.log("FIN");
+  console.log(portal0);
+  console.log(portal1);
 })();

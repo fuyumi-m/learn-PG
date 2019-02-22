@@ -33,20 +33,22 @@
   //     4. 「終了」と入力された時: Consoleに'終了します'と表示して、Whileループを終了する
   //   - 「確認」「追加」「削除」「終了」以外がinputに代入されたら「「確認,追加,削除,終了」以外は入力できません」とConsoleに表示する
 
-    while (input < commands.length) {
-      if (input == "確認") {
-        showTodos();
-      } else if (input == commands[1]) {
-        createTodo();
-      } else if (input == commands[2]) {
-        //   deleatTodo();
-      } else if (input == commands[3]) {
-        console.log("終了します");
-      } else {
-        console.log("確認,追加,削除,終了」以外は入力できません");
-      }
+  while ((input = commands[3])) {
+    input = prompt("[" + commands + "]の４つのいずれかを入力してください");
+    if (input == commands[0]) {
+      console.log(input);
+      showTodos();
+    } else if (input == commands[1]) {
+      createTodo();
+    } else if (input == commands[2]) {
+      //   deleatTodo();
+      console.log("削除します");
+    } else {
+      console.log(commands + "以外は入力できません");
     }
   }
+  console.log("終了します");
+  console.log(input);
 
   // ここでWhileループを抜けた後もタスク一覧を表示する(最終的なタスク一覧を確認するため)
 
@@ -74,14 +76,14 @@
    *   タスクなし
    */
   // ここにshowTodos関数を作る
-  const showTodos = function() {
+  function showTodos() {
     document.write("============================");
     document.write("現在持っているタスクの一覧");
     document.write("============================");
     commands.forEach(value => {
       document.write(commands);
     });
-  };
+  }
   /**
    * 「追加」が入力されたときに実行される関数「createTodo関数」を用意する
    *    - promptを使って追加するタスクを入力できるようにする
@@ -93,7 +95,7 @@
    *      3. showTodos関数を実行して、現在保持しているタスク一覧を表示する
    */
   // ここにcreateTodo関数を作る
-  const createTodo = function() {
+  function createTodo() {
     if ((input = prompt("タスクを入力してください", "")) == "") {
       alert("何も入力されてないのでスキップします");
     } else if (input) {
@@ -101,7 +103,7 @@
       alert("新しいタスクを追加しました。");
       showTodos();
     }
-  };
+  }
   /**
    * 「削除」が入力されたときに実行される関数
    *    - promptを使って削除するタスクのインデックス番号を入力できるようにする
